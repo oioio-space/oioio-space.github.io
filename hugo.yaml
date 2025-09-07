@@ -27,7 +27,7 @@ params:
   # TITRES PERSONNALISABLES DES SECTIONS (maintenant avec Home)
   # =============================================================
   titles:
-    home: "Accueil"                    # ← NOUVEAU : Titre pour la navigation Home
+    home: "Accueil"
     social: "Réseaux sociaux"
     profile: "Profil"
     education: "Formation"
@@ -47,7 +47,7 @@ params:
     lastname: "MATHIEU"                 # Nom (affiché en gras)
     profession: "Analyste Cyber"        # Titre professionnel
     image: "img/perfil.jpg"             # Chemin vers la photo de profil
-    cv_file: "pdf/cv-mathieu-bachmann.pdf"         # Chemin vers le CV PDF existant
+    cv_file: "pdf/CV-Mathieu-BACHMANN-Analyste-Cyber.pdf"         # Chemin vers le CV PDF existant
     cv_filename: "CV-Mathieu-BACHMANN-Analyste-Cyber.pdf"  # Nom du PDF généré
     download_text: "Téléchargement du CV"          # Texte du bouton de téléchargement
     description: "Analyste cybersécurité passionné avec plusieurs années d'expérience dans la protection des systèmes d'information. Expert en détection des menaces, analyse des vulnérabilités et mise en place de mesures de sécurité. Diplômé d'études techniques supérieures avec un parcours orienté vers l'innovation et les meilleures pratiques de sécurité."

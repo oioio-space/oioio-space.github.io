@@ -13,7 +13,7 @@
             <div>
                 <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
                 {{ with .Site.Params.profile.cv_file }}
-                <a download="" href="{{ . | relURL }}" class="home__button-movil">{{ $.Site.Params.profile.download_text | default "Download CV" }}</a>
+                <a download="" href="{{ $.Site.Params.profile.cv_file  | relURL }}" class="home__button-movil">{{ $.Site.Params.profile.download_text | default "Download CV" }}</a>
                 {{ else }}
                 <a download="" href="{{ "pdf/ResumeCv.pdf" | relURL }}" class="home__button-movil">Download CV</a>
                 {{ end }}
