@@ -1,0 +1,25 @@
+name = "Responsive CV"
+license = "MIT"
+licenselink = "https://github.com/username/hugo-responsive-cv/blob/master/LICENSE"
+description = "A responsive CV/resume theme for Hugo with optional sections and PDF export"
+homepage = "https://github.com/username/hugo-responsive-cv"
+tags = ["cv", "resume", "responsive", "portfolio", "personal", "pdf", "dark-mode"]
+features = [
+    "Responsive design",
+    "Dark/Light mode toggle",
+    "PDF export functionality",
+    "Optional sections",
+    "Mobile-first approach",
+    "Clean and modern design"
+]
+min_version = "0.74.0"
+
+[author]
+name = "Your Name"
+homepage = "https://example.com"
+
+# Captures d'écran du thème (optionnel)
+[original]
+name = "Original HTML Template"
+homepage = "https://github.com/bedimcode"
+repo = "https://github.com/bedimcode/responsive-resume-cv-smith"

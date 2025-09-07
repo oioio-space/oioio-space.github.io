@@ -1,0 +1,30 @@
+<section class="interests section" id="interests">
+    <h2 class="section-title">{{ .Site.Params.titles.interests | default "Interests" }}</h2>
+
+    <div class="interests__container bd-grid">
+        {{ range .Site.Params.interests }}
+        <div class="interests__content">
+            <i class='bx {{ .icon }} interests__icon'></i>
+            <span class="interests__name">{{ .name }}</span>
+        </div>
+        {{ else }}
+        <!-- Default interests if none configured -->
+        <div class="interests__content">
+            <i class='bx bx-headphone interests__icon'></i>
+            <span class="interests__name">Music</span>
+        </div>
+        <div class="interests__content">
+            <i class='bx bxs-plane-alt interests__icon'></i>
+            <span class="interests__name">Travel</span>
+        </div>
+        <div class="interests__content">
+            <i class='bx bxs-book interests__icon'></i>
+            <span class="interests__name">Read</span>
+        </div>
+        <div class="interests__content">
+            <i class='bx bx-dumbbell interests__icon'></i>
+            <span class="interests__name">Fitness</span>
+        </div>
+        {{ end }}
+    </div>
+</section>

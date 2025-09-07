@@ -1,0 +1,15 @@
+<!--========== HTML2PDF ==========-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!--========== CONFIGURATION DYNAMIQUE ==========-->
+<script>
+    // Configuration dynamique depuis Hugo
+    window.hugoConfig = {
+        pdfFilename: {{ with .Site.Params.profile.cv_filename }}"{{ . }}"{{ else }}"{{ .Site.Params.profile.firstname | default "CV" }}-{{ .Site.Params.profile.lastname | default "Resume" }}.pdf"{{ end }},
+    profileName: "{{ .Site.Params.profile.firstname | default "CV" }} {{ .Site.Params.profile.lastname | default "Resume" }}"
+    };
+</script>
+
+<!--========== MAIN JS ==========-->
+<script src="{{ "js/main.js" | relURL }}"></script>

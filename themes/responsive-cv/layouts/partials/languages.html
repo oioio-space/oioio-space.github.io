@@ -1,0 +1,24 @@
+<section class="languages section" id="languages">
+    <h2 class="section-title">{{ .Site.Params.titles.languages | default "Languages" }}</h2>
+
+    <div class="languages__container">
+        <ul class="languages__content bd-grid">
+            {{ range .Site.Params.languages }}
+            <li class="languages__name">
+                <span class="languages__circle"></span>{{ . }}
+            </li>
+            {{ else }}
+            <!-- Default languages if none configured -->
+            <li class="languages__name">
+                <span class="languages__circle"></span>Spanish
+            </li>
+            <li class="languages__name">
+                <span class="languages__circle"></span>English
+            </li>
+            <li class="languages__name">
+                <span class="languages__circle"></span>French
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</section>

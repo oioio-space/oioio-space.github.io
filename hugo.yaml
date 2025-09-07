@@ -1,0 +1,170 @@
+baseURL: 'https://oioio-space.github.io'
+languageCode: 'en-us'
+title: 'CV Mathieu BACHMANN'
+theme: 'responsive-cv'
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+
+params:
+  # =============================================================
+  # SECTIONS OPTIONNELLES - Mettre à false pour désactiver
+  # =============================================================
+  sections:
+    social: False         # Réseaux sociaux
+    profile: true        # Description de profil
+    education: true      # Formation/Éducation
+    skills: true         # Compétences techniques
+    experience: true     # Expérience professionnelle
+    certificates: true   # Certificats et prix
+    references: false    # Références professionnelles
+    languages: true      # Langues parlées
+    interests: true      # Centres d'intérêt
+
+  # =============================================================
+  # TITRES PERSONNALISABLES DES SECTIONS (maintenant avec Home)
+  # =============================================================
+  titles:
+    home: "Accueil"                    # ← NOUVEAU : Titre pour la navigation Home
+    social: "Réseaux sociaux"
+    profile: "Profil"
+    education: "Formation"
+    skills: "Compétences"
+    experience: "Expériences Professionnelles"
+    certificates: "Diplômes"
+    references: "Références"
+    languages: "Langues"
+    interests: "Centres d'intérêt"
+
+  # =============================================================
+  # INFORMATIONS PERSONNELLES PRINCIPALES
+  # =============================================================
+  profile:
+    name: "Bachmann"                    # Nom affiché dans le logo nav
+    firstname: "BACHMANN"               # Prénom (affiché en majuscules)
+    lastname: "MATHIEU"                 # Nom (affiché en gras)
+    profession: "Analyste Cyber"        # Titre professionnel
+    image: "img/perfil.jpg"             # Chemin vers la photo de profil
+    cv_file: "pdf/cv-mathieu-bachmann.pdf"         # Chemin vers le CV PDF existant
+    cv_filename: "CV-Mathieu-BACHMANN-Analyste-Cyber.pdf"  # Nom du PDF généré
+    download_text: "Téléchargement du CV"          # Texte du bouton de téléchargement
+    description: "Analyste cybersécurité passionné avec plusieurs années d'expérience dans la protection des systèmes d'information. Expert en détection des menaces, analyse des vulnérabilités et mise en place de mesures de sécurité. Diplômé d'études techniques supérieures avec un parcours orienté vers l'innovation et les meilleures pratiques de sécurité."
+
+  # =============================================================
+  # INFORMATIONS DE CONTACT
+  # =============================================================
+  contact:
+    address: "Belgentier - France"
+    email: "mathieu.bachmann@proton.me"
+    phone: "07 83 83 10 22"
+
+  # =============================================================
+  # RÉSEAUX SOCIAUX
+  # =============================================================
+  social:
+    - username: "@mathieu-bachmann"
+      url: "https://www.linkedin.com/in/mathieu-bachmann"
+      icon: "bxl-linkedin-square"
+    - username: "@mathieu.bachmann"
+      url: "https://github.com/mathieu-bachmann"
+      icon: "bxl-github"
+
+  # =============================================================
+  # FORMATION/ÉDUCATION
+  # =============================================================
+  education:
+    - title: "MASTER CYBERSÉCURITÉ"
+      institution: "École Supérieure d'Informatique"
+      period: "2018 - 2020"
+      last: false
+    - title: "BTS SERVICES INFORMATIQUES"
+      institution: "Lycée Technique"
+      period: "2016 - 2018"
+      last: false
+    - title: "CERTIFICATIONS SÉCURITÉ"
+      institution: "Divers Organismes"
+      period: "2020 - 2024"
+      last: true
+
+  # =============================================================
+  # COMPÉTENCES TECHNIQUES (organisées en colonnes)
+  # =============================================================
+  skills:
+    - items:                         # Première colonne
+        - "Analyse de vulnérabilités"
+        - "Pentest / Audit sécurité"
+        - "SIEM / SOC"
+        - "Python / PowerShell"
+    - items:                         # Deuxième colonne
+        - "Forensics numérique"
+        - "Gestion des incidents"
+        - "ISO 27001 / NIST"
+        - "Réseaux / Firewalls"
+
+  # =============================================================
+  # EXPÉRIENCE PROFESSIONNELLE
+  # =============================================================
+  experience:
+    - title: "ANALYSTE CYBERSÉCURITÉ SENIOR"
+      company: "SecureTech Solutions"
+      period: "2022 - Présent"
+      description: "Responsable de la détection et de l'analyse des menaces avancées. Pilotage du SOC niveau 2, mise en place de procédures de réponse aux incidents, formation des équipes junior."
+      last: false
+    - title: "ANALYSTE SOC"
+      company: "CyberDefense Corp"
+      period: "2020 - 2022"
+      description: "Surveillance 24/7 des infrastructures critiques, analyse des alertes sécurité, rédaction de rapports d'incidents, amélioration des règles de corrélation SIEM."
+      last: false
+    - title: "TECHNICIEN SÉCURITÉ"
+      company: "IT Security Group"
+      period: "2018 - 2020"
+      description: "Support technique niveau 2, déploiement de solutions de sécurité, maintien en condition sécuritaire, documentation des procédures."
+      last: true
+
+  # =============================================================
+  # CERTIFICATS ET RÉCOMPENSES
+  # =============================================================
+  certificates:
+    - title: "Certified Ethical Hacker (CEH) - EC-Council (2023)"
+      description: "Certification reconnue en tests d'intrusion et sécurité offensive, validation des compétences en audit sécurité."
+    - title: "CompTIA Security+ - CompTIA (2021)"
+      description: "Certification fondamentale en cybersécurité couvrant tous les aspects de la sécurité IT."
+    - title: "CISSP Associate - (ISC)² (2024)"
+      description: "Certification avancée en gestion de la sécurité de l'information et gouvernance des risques."
+
+  # =============================================================
+  # RÉFÉRENCES PROFESSIONNELLES
+  # =============================================================
+  references:
+    - name: "M. Jean Dupont"
+      position: "RSSI Senior"
+      phone: "06 12 34 56 78"
+      email: "j.dupont@securetech.fr"
+    - name: "Mme Marie Martin"
+      position: "Manager SOC"
+      phone: "06 98 76 54 32"
+      email: "m.martin@cyberdefense.com"
+
+  # =============================================================
+  # LANGUES PARLÉES
+  # =============================================================
+  languages:
+    - "Français (natif)"
+    - "Anglais (courant)"
+    - "Espagnol (intermédiaire)"
+
+  # =============================================================
+  # CENTRES D'INTÉRÊT
+  # =============================================================
+  interests:
+    - name: "Cybersécurité"
+      icon: "bx-shield-alt-2"
+    - name: "Technologie"
+      icon: "bx-chip"
+    - name: "Lecture Tech"
+      icon: "bxs-book"
+    - name: "Sports"
+      icon: "bx-dumbbell"
+

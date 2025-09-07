@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+     <!--========== CSS ==========-->
+    <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+
+    <title>{{ .Site.Params.profile.name | default "CV" }} - {{ .Site.Params.profile.profession | default "Resume" }}</title>
+</head>
+<body>
+<!--========== HEADER ==========-->
+{{ partial "header.html" . }}
+
+<main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+        <div class="resume__left">
+            <!--========== HOME ==========-->
+            {{ partial "home.html" . }}
+
+            <!--========== PROFILE ==========-->
+            {{ if .Site.Params.sections.profile }}{{ partial "profile.html" . }}{{ end }}
+
+            <!--========== SOCIAL ==========-->
+            {{ if .Site.Params.sections.social }}{{ partial "social.html" . }}{{ end }}
+
+            <!--========== EDUCATION ==========-->
+            {{ if .Site.Params.sections.education }}{{ partial "education.html" . }}{{ end }}
+
+            <!--========== SKILLS  ==========-->
+            {{ if .Site.Params.sections.skills }}{{ partial "skills.html" . }}{{ end }}
+        </div>
+
+        <div class="resume__right">
+            <!--========== EXPERIENCE ==========-->
+            {{ if .Site.Params.sections.experience }}{{ partial "experience.html" . }}{{ end }}
+
+            <!--========== CERTIFICATES ==========-->
+            {{ if .Site.Params.sections.certificates }}{{ partial "certificates.html" . }}{{ end }}
+
+            <!--========== REFERENCES ==========-->
+            {{ if .Site.Params.sections.references }}{{ partial "references.html" . }}{{ end }}
+
+            <!--========== LANGUAGES ==========-->
+            {{ if .Site.Params.sections.languages }}{{ partial "languages.html" . }}{{ end }}
+
+            <!--========== INTERESTS ==========-->
+            {{ if .Site.Params.sections.interests }}{{ partial "interests.html" . }}{{ end }}
+        </div>
+    </div>
+</main>
+
+<!--========== SCROLL TOP ==========-->
+{{ partial "scroll-top.html" . }}
+
+<!--========== SCRIPTS ==========-->
+{{ partial "scripts.html" . }}
+</body>
+</html>

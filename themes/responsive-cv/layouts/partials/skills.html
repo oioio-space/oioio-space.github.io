@@ -1,0 +1,43 @@
+<section class="skills section" id="skills">
+    <h2 class="section-title">{{ .Site.Params.titles.skills | default "Skills" }}</h2>
+
+    <div class="skills__content bd-grid">
+        {{ range .Site.Params.skills }}
+        <ul class="skills__data">
+            {{ range .items }}
+            <li class="skills__name">
+                <span class="skills__circle"></span> {{ . }}
+            </li>
+            {{ end }}
+        </ul>
+        {{ else }}
+        <!-- Default skills if none configured -->
+        <ul class="skills__data">
+            <li class="skills__name">
+                <span class="skills__circle"></span> Html
+            </li>
+            <li class="skills__name">
+                <span class="skills__circle"></span> Css
+            </li>
+            <li class="skills__name">
+                <span class="skills__circle"></span> Sass
+            </li>
+            <li class="skills__name">
+                <span class="skills__circle"></span> JavaScript
+            </li>
+        </ul>
+
+        <ul class="skills__data">
+            <li class="skills__name">
+                <span class="skills__circle"></span> Angular
+            </li>
+            <li class="skills__name">
+                <span class="skills__circle"></span> Firebase
+            </li>
+            <li class="skills__name">
+                <span class="skills__circle"></span> React
+            </li>
+        </ul>
+        {{ end }}
+    </div>
+</section>

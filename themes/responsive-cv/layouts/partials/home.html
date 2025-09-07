@@ -1,0 +1,42 @@
+<section class="home" id="home">
+    <div class="home__container section bd-grid">
+        <div class="home__data bd-grid">
+            {{ with .Site.Params.profile.image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Site.Params.profile.name }}" class="home__img">
+            {{ else }}
+            <img src="{{ "img/perfil.jpg" | relURL }}" alt="" class="home__img">
+            {{ end }}
+
+            <h1 class="home__title">{{ .Site.Params.profile.firstname | default "SMITH" }} <b>{{ .Site.Params.profile.lastname | default "MATTHEW" }}</b></h1>
+            <h3 class="home__profession">{{ .Site.Params.profile.profession | default "Web developer" }}</h3>
+
+            <div>
+                <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
+                {{ with .Site.Params.profile.cv_file }}
+                <a download="" href="{{ . | relURL }}" class="home__button-movil">{{ $.Site.Params.profile.download_text | default "Download CV" }}</a>
+                {{ else }}
+                <a download="" href="{{ "pdf/ResumeCv.pdf" | relURL }}" class="home__button-movil">Download CV</a>
+                {{ end }}
+            </div>
+        </div>
+
+
+        <div class="home__address bd-grid">
+            <span class="home__information">
+                <i class='bx bx-map home__icon' ></i> {{ .Site.Params.contact.address | default "Av. Bolivar #123 Lima - Peru" }}
+            </span>
+            <span class="home__information">
+                <i class='bx bx-envelope home__icon' ></i> {{ .Site.Params.contact.email | default "user@email.com" }}
+            </span>
+            <span class="home__information">
+                <i class='bx bx-phone home__icon' ></i> {{ .Site.Params.contact.phone | default "999-888-777" }}
+            </span>
+        </div>
+    </div>
+
+    <!-- Theme change button -->
+    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+    <!-- Button to generate and download the pdf. Available for desktop. -->
+    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+</section>
