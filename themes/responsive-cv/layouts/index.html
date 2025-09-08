@@ -34,9 +34,6 @@
 
             <!--========== EDUCATION ==========-->
             {{ if .Site.Params.sections.education }}{{ partial "education.html" . }}{{ end }}
-
-            <!--========== SKILLS  ==========-->
-            {{ if .Site.Params.sections.skills }}{{ partial "skills.html" . }}{{ end }}
         </div>
 
         <div class="resume__right">
@@ -48,6 +45,9 @@
 
             <!--========== REFERENCES ==========-->
             {{ if .Site.Params.sections.references }}{{ partial "references.html" . }}{{ end }}
+
+            <!--========== SKILLS  ==========-->
+            {{ if .Site.Params.sections.skills }}{{ partial "skills.html" . }}{{ end }}
 
             <!--========== LANGUAGES ==========-->
             {{ if .Site.Params.sections.languages }}{{ partial "languages.html" . }}{{ end }}
