@@ -13,12 +13,12 @@ params:
   # SECTIONS OPTIONNELLES - Mettre à false pour désactiver
   # =============================================================
   sections:
-    social: False         # Réseaux sociaux
+    social: true         # Réseaux sociaux
     profile: true        # Description de profil
     education: true      # Formation/Éducation
     skills: true         # Compétences techniques
     experience: true     # Expérience professionnelle
-    certificates: true   # Certificats et prix
+    certificates: false   # Certificats et prix
     references: false    # Références professionnelles
     languages: true      # Langues parlées
     interests: true      # Centres d'intérêt
@@ -30,7 +30,7 @@ params:
     home: "Accueil"
     social: "Réseaux sociaux"
     profile: "Profil"
-    education: "Formation"
+    education: "Formations"
     skills: "Compétences"
     experience: "Expériences Professionnelles"
     certificates: "Diplômes"
@@ -42,22 +42,22 @@ params:
   # INFORMATIONS PERSONNELLES PRINCIPALES
   # =============================================================
   profile:
-    name: "Bachmann"                    # Nom affiché dans le logo nav
+    name: "Mathieu BACHMANN"                    # Nom affiché dans le logo nav
     firstname: "BACHMANN"               # Prénom (affiché en majuscules)
     lastname: "MATHIEU"                 # Nom (affiché en gras)
-    profession: "Analyste Cyber"        # Titre professionnel
+    profession: "Expert cybersécurité"        # Titre professionnel
     image: "img/perfil.jpg"             # Chemin vers la photo de profil
-    cv_file: "pdf/CV-Mathieu-BACHMANN-Analyste-Cyber.pdf"         # Chemin vers le CV PDF existant
-    cv_filename: "CV-Mathieu-BACHMANN-Analyste-Cyber.pdf"  # Nom du PDF généré
+    cv_file: "pdf/CV-Mathieu-BACHMANN-Expert-Cyber.pdf"         # Chemin vers le CV PDF existant
+    cv_filename: "CV-Mathieu-BACHMANN-Expert-Cyber.pdf"  # Nom du PDF généré
     download_text: "Téléchargement du CV"          # Texte du bouton de téléchargement
-    description: "Analyste cybersécurité passionné avec plusieurs années d'expérience dans la protection des systèmes d'information. Expert en détection des menaces, analyse des vulnérabilités et mise en place de mesures de sécurité. Diplômé d'études techniques supérieures avec un parcours orienté vers l'innovation et les meilleures pratiques de sécurité."
+    description: "Expert cybersécurité avec 15+ ans d'expérience en protection d'infrastructures critiques maritimes IT/OT. Spécialiste du développement d'outils cyberdéfense innovants et de l'investigation numérique sous contraintes opérationnelles. Expertise technique polyvalente avec approche centrée sur l'efficacité opérationnelle et l'innovation. Grande autonomie opérationnelle et adaptabilité éprouvée aux environnements techniques diversifiés."
 
   # =============================================================
   # INFORMATIONS DE CONTACT
   # =============================================================
   contact:
     address: "Belgentier - France"
-    email: "mathieu.bachmann@proton.me"
+    email: "mathieu.bachmann+cv@pm.me"
     phone: "07 83 83 10 22"
 
   # =============================================================
@@ -65,27 +65,27 @@ params:
   # =============================================================
   social:
     - username: "@mathieu-bachmann"
-      url: "https://www.linkedin.com/in/mathieu-bachmann"
+      url: "https://www.linkedin.com/in/mathieu-bachmann/"
       icon: "bxl-linkedin-square"
-    - username: "@mathieu.bachmann"
-      url: "https://github.com/mathieu-bachmann"
+    - username: "@oioio-space"
+      url: "https://github.com/oioio-space"
       icon: "bxl-github"
 
   # =============================================================
   # FORMATION/ÉDUCATION
   # =============================================================
   education:
-    - title: "MASTER CYBERSÉCURITÉ"
-      institution: "École Supérieure d'Informatique"
-      period: "2018 - 2020"
+    - title: "BM CYBER - Concepteur intégrateur d'infrastructures informatiques parcours Cybersécurité"
+      institution: "Certification professionnelle - Niveau 6 - NSF 326 - PEM Saint-Mandrier"
+      period: "2018 - 2019"
       last: false
-    - title: "BTS SERVICES INFORMATIQUES"
-      institution: "Lycée Technique"
-      period: "2016 - 2018"
+    - title: "BS SITEL"
+      institution: "Certification professionnelle - Niveau 5 - NSF 255r - PEM Saint-Mandrier"
+      period: "2015 - 2016"
       last: false
-    - title: "CERTIFICATIONS SÉCURITÉ"
-      institution: "Divers Organismes"
-      period: "2020 - 2024"
+    - title: "BTS IRIS"
+      institution: "Lycée Diderot - Paris XIXeme"
+      period: "2005 - 2007"
       last: true
 
   # =============================================================
@@ -93,46 +93,51 @@ params:
   # =============================================================
   skills:
     - items:                         # Première colonne
-        - "Analyse de vulnérabilités"
-        - "Pentest / Audit sécurité"
-        - "SIEM / SOC"
-        - "Python / PowerShell"
+        - "Digital Forensics & Incident Response (DFIR)"
+        - "Sécurité IT/OT : systèmes embarqués maritimes & protocoles industriels"
+        - "Gestion de crise cyber & coordination multi-acteurs"
     - items:                         # Deuxième colonne
-        - "Forensics numérique"
-        - "Gestion des incidents"
-        - "ISO 27001 / NIST"
-        - "Réseaux / Firewalls"
+        - "Programmation cybersécurité (Go, Python, Powershell, Bash) & développement outils"
+        - "Architecture sécurisée : pare-feux, segmentation VLAN, supervision"
+        - "Administration systèmes critiques (Windows/Linux) & réseaux haute disponibilité"
+
 
   # =============================================================
   # EXPÉRIENCE PROFESSIONNELLE
   # =============================================================
   experience:
-    - title: "ANALYSTE CYBERSÉCURITÉ SENIOR"
-      company: "SecureTech Solutions"
-      period: "2022 - Présent"
-      description: "Responsable de la détection et de l'analyse des menaces avancées. Pilotage du SOC niveau 2, mise en place de procédures de réponse aux incidents, formation des équipes junior."
+    - title: "RESPONSABLE AUDIT SÉCURITÉ & PENTEST MARITIME"
+      company: "Marine Nationale - ALFAN - Centre Support Cyberdéfense"
+      period: "2024 - Présent (1 an)"
+      description: "Création cellule pentest/audit spécialisée maritime militaire. Développement expertise sécurité systèmes navals : audit risques AIS/ECDIS, évaluation stratégies détection industrielles, pentest systèmes critiques (partenariat DGA). Automatisation audits par développement outils, déploiement framework MITRE Caldera. Investigation sécurité équipements maritimes IT/OT (AIS, ECDIS, protocoles navals)."
       last: false
-    - title: "ANALYSTE SOC"
-      company: "CyberDefense Corp"
-      period: "2020 - 2022"
-      description: "Surveillance 24/7 des infrastructures critiques, analyse des alertes sécurité, rédaction de rapports d'incidents, amélioration des règles de corrélation SIEM."
+    - title: "ENTRAINEUR CYBERDÉFENSE"
+      company: "Marine Nationale - ALFAN - Centre Support Cyberdéfense"
+      period: "2019 - 2024 (5 ans)"
+      description: "Entraînement, formation et évaluation des unités Marine Nationale sur réponse à incidents cyber. Direction exercices cyber majeurs multi-acteurs (Marine/industriels défense, inter-armées). Développement suite d'outils cybersécurité : malwares d'exercice, programme contrôle d'intégrité bâtiments, parseur PCAP vers règles Suricata, scripts forensics Windows, transmission données sécurisée par télégraphie. Expertise systèmes navals IT/OT (PLC, NMEA183, AIS, protocoles maritimes)."
       last: false
-    - title: "TECHNICIEN SÉCURITÉ"
-      company: "IT Security Group"
-      period: "2018 - 2020"
-      description: "Support technique niveau 2, déploiement de solutions de sécurité, maintien en condition sécuritaire, documentation des procédures."
+    - title: "INTÉGRATEUR SYSTÈMES D'INFORMATION OPERATIONNEL"
+      company: "Ministère des Armées - CIRISI Toulon"
+      period: "2016 - 2018 (2 ans)"
+      description: "Intégration systèmes nationaux sécurisé (communication, commandement, logistique) pour 70 000+ usagers sur 12 bases de défense (sud-est France + outre-mer). Architecture hybride Windows/Linux : AD, Exchange, VMware, Samba, services web sécurisés. Gestion projets urgents en équipe réduite avec multi-astreintes. Déploiement critique en mer : modification code temps-réel avec Capgemini, adaptation système logistique naval sous contraintes opérationnelles. Automatisation workflows."
+      last: false
+    - title: "ADMINISTRATEUR RÉSEAUX"
+      company: "Ministère des Armées - DIRISI Nouméa"
+      period: "2012 - 2015 (3 ans)"
+      description: "Administration réseaux multi-sites 15 sites distants, 4000 utilisateurs, classifications multiples. Modernisation architecture internet haute disponibilité : redondance multi-opérateurs, routage adaptatif IP SLA, continuité services critiques (MRCC). Sécurisation complète : pare-feux Netasq/Stormshield, segmentation VLAN, AAA centralisé (AD/Radius), MAC locking EAR. Technologies hybrides : VSAT satellite, fibre optique, faisceaux hertziens, liaisons spécialisées. Migration supervision vers Centreon. Autonomie technique complète en environnement contraint outre-mer."
+      last: false
+    - title: "EXPERT SYSTÈMES EMBARQUÉS & TÉLÉCOMMUNICATIONS SÉCURISÉES"
+      company: "Marine Nationale - Chasseur de Mines Tripartite Céphée"
+      period: "2009 - 2012 (3 ans)"
+      description: "Administration complète systèmes d'information classifiés en environnement airgap : réseau IP, AD, postes clients avec MCO/MCS autonome. Gestion rigoureuse cryptographie/SSI : comptabilité articles contrôlés, mise à la clé équipements, chiffreurs ligne/hors-ligne. Communications critiques UHF/VHF/HF en opérations internationales. Expertise maintenance systèmes legacy : réparation SNTI 120 canaux), cartes électroniques modifiées en mer. Développement Python : automatisation mails Skyfile équipage. Responsabilité SIC complète en équipe réduite, garantie continuité communications."
       last: true
 
   # =============================================================
   # CERTIFICATS ET RÉCOMPENSES
   # =============================================================
   certificates:
-    - title: "Certified Ethical Hacker (CEH) - EC-Council (2023)"
-      description: "Certification reconnue en tests d'intrusion et sécurité offensive, validation des compétences en audit sécurité."
-    - title: "CompTIA Security+ - CompTIA (2021)"
-      description: "Certification fondamentale en cybersécurité couvrant tous les aspects de la sécurité IT."
-    - title: "CISSP Associate - (ISC)² (2024)"
-      description: "Certification avancée en gestion de la sécurité de l'information et gouvernance des risques."
+    - title: "Certification professionnelle - Niveau 5 - NSF 255r (2016)"
+      description: "Chef d'équipe d'exploitation et de maintenance des systèmes d'opérations navales"
 
   # =============================================================
   # RÉFÉRENCES PROFESSIONNELLES
@@ -152,19 +157,18 @@ params:
   # =============================================================
   languages:
     - "Français (natif)"
-    - "Anglais (courant)"
-    - "Espagnol (intermédiaire)"
+    - "Anglais (professionnel et technique - TOEIC 605)"
 
   # =============================================================
   # CENTRES D'INTÉRÊT
   # =============================================================
   interests:
-    - name: "Cybersécurité"
-      icon: "bx-shield-alt-2"
-    - name: "Technologie"
-      icon: "bx-chip"
-    - name: "Lecture Tech"
-      icon: "bxs-book"
-    - name: "Sports"
+    - name: "Dévellopement"
+      icon: "bxl-go-lang"
+    - name: "Sports (surfskate, escalade)"
       icon: "bx-dumbbell"
+    - name: "Histoire, Géopolitique"
+      icon: "bx-world"
+
+
 
